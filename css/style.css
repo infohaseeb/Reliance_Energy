@@ -1,1 +1,61 @@
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    background-color: #d1d5db; /* Grey margins for boxed effect */
+}
+
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 123, 255, 0.15), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Modern Glass Effect */
+.glass-nav {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+/* Modern Animated Underline for Nav Links */
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    color: #374151;
+    /* gray-700 */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007BFF;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007BFF;
+    transition: width 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Partner logo hover effect */
+.partner-logo {
+    filter: grayscale(100%) opacity(50%);
+    transition: all 0.4s ease;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%) opacity(100%);
+    transform: translateY(-5px);
+}
