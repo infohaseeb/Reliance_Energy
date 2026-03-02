@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliance Energy - Energized by Sun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans text-gray-800">
+    <div id="boxed-wrapper"
+        class="max-w-[1440px] mx-auto bg-[#f4f6f8] sm:shadow-2xl relative overflow-hidden flex flex-col min-h-screen">
+
+        <header id="header-container"
+            class="fixed w-full max-w-[1440px] mx-auto left-0 right-0 z-50 transition-all duration-500 top-0">
+
+            <div class="px-0 lg:px-6 pt-0 lg:pt-5 transition-all duration-500" id="nav-wrapper">
+                <div id="navbar"
+                    class="mx-auto glass-nav max-w-7xl bg-white/80 lg:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border-b lg:border border-white/60 transition-all duration-500 flex flex-col overflow-hidden">
+
+                    <!-- Integrated Topbar -->
+                    <div id="topbar" style="height: 40px; opacity: 1;"
+                        class="bg-white/40 text-gray-600 text-[11px] uppercase tracking-wider font-semibold transition-all duration-500 overflow-hidden hidden lg:flex items-center border-b border-gray-200/50 px-4 sm:px-6 lg:px-8 w-full z-20">
+                        <div class="w-full flex justify-between items-center">
+                            <div class="flex space-x-8">
+                                <a href="mailto:info@relianceenergy.com"
+                                    class="flex items-center hover:text-brand-blue transition group">
+                                    <i class="fa-solid fa-envelope text-brand-green mr-2 transition"></i>
+                                    info@relianceenergy.com
+                                </a>
+                                <a href="tel:03111777861"
+                                    class="flex items-center hover:text-brand-blue transition group">
+                                    <i class="fa-solid fa-phone text-brand-green mr-2 transition"></i> 0311 1777861
+                                </a>
+                            </div>
+                            <div class="flex space-x-6 items-center">
+                                <span class="flex items-center">
+                                    <i class="fa-regular fa-clock text-brand-blue mr-2"></i> Mon - Fri: 9:00 AM - 6:00
+                                    PM
+                                </span>
+                                <div class="flex space-x-4 pl-6 border-l border-gray-300">
+                                    <a href="#" class="hover:text-brand-blue transition transform hover:scale-110"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="hover:text-brand-blue transition transform hover:scale-110"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a href="#" class="hover:text-brand-blue transition transform hover:scale-110"><i
+                                            class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Navigation -->
+                    <nav class="h-[76px] flex items-center justify-between px-4 sm:px-6 lg:px-8 w-full z-10">
+
+                        <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                            <img src="aalogo.png" alt="Reliance Energy Logo"
+                                class="h-12 w-auto object-contain drop-shadow-sm">
+                            <div class="hidden sm:block">
+                                <h1 class="font-extrabold text-xl tracking-tight text-gray-900 leading-none">RELIANCE
+                                    <span class="text-brand-blue">ENERGY</span>
+                                </h1>
+                                <p class="text-[9px] text-brand-green font-bold tracking-widest uppercase mt-0.5">
+                                    Energized
+                                    by
+                                    Sun</p>
+                            </div>
+                        </div>
+
+                        <div class="hidden lg:flex space-x-6 items-center h-full">
+                            <a href="index.html" class="nav-link text-brand-blue">Home</a>
+                            <a href="about.html" class="nav-link">About</a>
+                            <a href="services.html" class="nav-link">Services</a>
+                            <a href="services.html#how-we-work" class="nav-link">How We Work</a>
+
+                            <a href="project.html" class="nav-link">Projects</a>
+
+                            <a href="team.html" class="nav-link">Team</a>
+
+                            <div class="flex items-center space-x-3 ml-2">
+                                <a href="index.html#calculator"
+                                    class="border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-5 py-2 rounded-full font-bold transition shadow-sm transform hover:-translate-y-0.5 whitespace-nowrap">
+                                    <i class="fa-solid fa-calculator mr-1.5"></i> Solar Calculator
+                                </a>
+                                <a href="#contact"
+                                    class="bg-gradient-to-r from-brand-blue to-blue-600 hover:from-blue-600 hover:to-blue-800 text-white px-7 py-2.5 rounded-full font-bold transition shadow-[0_8px_20px_-6px_rgba(0,123,255,0.6)] hover:shadow-[0_10px_25px_-6px_rgba(0,123,255,0.8)] transform hover:-translate-y-0.5 border border-blue-400/30 whitespace-nowrap">
+                                    Get a Quote
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="lg:hidden flex items-center">
+                            <button onclick="toggleMenu()"
+                                class="text-gray-800 hover:text-brand-blue focus:outline-none">
+                                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full shadow-2xl origin-top transition-all duration-300">
+                <div class="px-4 pt-4 pb-8 space-y-2">
+                    <a href="index.html"
+                        class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">Home</a>
+                    <a href="about.html"
+                        class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">About
+                        Company</a>
+                    <a href="services.html"
+                        class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">Services</a>
+                    <a href="project.html"
+                        class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">Portfolio</a>
+                    <a href="career.html"
+                        class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">Careers</a>
+                    <a href="team.html"
+                        class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">Team</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="home"
+            class="relative hero-bg min-h-[90vh] flex items-center justify-center px-4 overflow-hidden rounded-b-[3rem] shadow-sm z-10">
+            <!-- Animated Background Gradients & Effects -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0f172a]/70 to-[#0a0f1c]/90 z-0"></div>
+            <div
+                class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand-blue/30 rounded-full blur-[150px] animate-pulse pointer-events-none mix-blend-screen mix-blend-color-dodge">
+            </div>
+            <div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-brand-green/20 rounded-full blur-[150px] animate-pulse pointer-events-none mix-blend-screen opacity-70"
+                style="animation-delay: 2s;"></div>
+
+            <div
+                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30 z-0 mix-blend-overlay">
+            </div>
+
+            <div class="max-w-6xl mx-auto text-center text-white relative z-10 pt-28 pb-20">
+                <!-- Badge -->
+                <div
+                    class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_0_rgba(255,255,255,0.05)] mb-8 transform hover:scale-105 transition-transform duration-300">
+                    <span class="relative flex h-3 w-3">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-green"></span>
+                    </span>
+                    <span class="text-white font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs">Energized by
+                        the Sun</span>
+                </div>
+
+                <!-- Headline -->
+                <h1
+                    class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-[1.1] tracking-tight drop-shadow-2xl">
+                    Power Your Future <br class="hidden md:block" />
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-brand-green via-blue-400 to-brand-blue drop-shadow-lg">With
+                        Zero Bills</span>
+                </h1>
+
+                <!-- Subheadline -->
+                <p
+                    class="text-lg md:text-2xl mb-12 text-gray-300 font-medium max-w-3xl mx-auto drop-shadow-md leading-relaxed px-4">
+                    Join the energy revolution. Cutting-edge solar solutions designed for maximum efficiency, extreme
+                    durability, and stunning aesthetic appeal.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="services.html"
+                        class="group relative inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white transition-all duration-300 bg-brand-blue rounded-full shadow-[0_15px_40px_-10px_rgba(0,123,255,0.6)] hover:shadow-[0_20px_50px_-10px_rgba(0,123,255,0.8)] hover:-translate-y-1 focus:outline-none overflow-hidden w-full sm:w-auto">
+                        <span
+                            class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
+                        <span class="relative flex items-center gap-3">
+                            Explore Solutions <i
+                                class="fa-solid fa-arrow-right-long transform group-hover:translate-x-2 transition-transform"></i>
+                        </span>
+                    </a>
+                    <a href="#calculator"
+                        class="group relative inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white transition-all duration-300 bg-white/10 backdrop-blur-md rounded-full border border-white/20 hover:bg-white/20 hover:-translate-y-1 hover:shadow-xl focus:outline-none w-full sm:w-auto">
+                        <span class="relative flex items-center gap-3">
+                            <i class="fa-solid fa-calculator text-brand-green"></i> Energy Calculator
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Trust signals -->
+                <div
+                    class="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm font-semibold text-gray-400 uppercase tracking-widest">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-brand-blue"></i> 25
+                        Year Warranty</div>
+                    <div class="hidden sm:block w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-bolt text-brand-green"></i> Tier 1 Panels
+                    </div>
+                    <div class="hidden sm:block w-1.5 h-1.5 rounded-full bg-white/20"></div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-headset text-brand-blue"></i> 24/7
+                        Support</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floating Price Ticker Grid -->
+        <div class="relative z-20 -mt-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-16">
+            <div
+                class="bg-white/80 backdrop-blur-2xl rounded-3xl p-6 sm:p-8 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] border border-white/60">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center mb-6 pb-4 border-b border-gray-100/80">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-gradient-to-br from-green-50 to-emerald-100 flex items-center justify-center text-brand-green shadow-inner">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-gray-900 font-extrabold text-lg tracking-tight">Live Market Rates</h4>
+                            <p class="text-[10px] font-bold text-gray-400 tracking-wider uppercase">Solar Panels (PKR/W)
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-4 md:mt-0 flex items-center gap-2 bg-gray-50/80 px-4 py-2 rounded-full border border-gray-200/60 shadow-sm">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-green"></span>
+                        </span>
+                        <p class="text-gray-500 text-[10px] font-bold font-mono tracking-widest uppercase mt-0.5">Sync:
+                            <span id="currentDateTicker" class="text-gray-900"></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6" id="priceTickerGrid">
+                    <!-- Prices will be loaded here dynamically via script -->
+                    <div class="col-span-2 lg:col-span-4 flex justify-center py-6">
+                        <div class="inline-flex items-center gap-3 text-brand-blue font-semibold">
+                            <i class="fa-solid fa-circle-notch fa-spin"></i> Fetching Live Quotes...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section id="services" class="py-32 relative bg-white border-t border-gray-100 overflow-hidden">
+            <!-- Decorative Backgrounds -->
+            <div
+                class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-50/50 to-transparent z-0 pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-tr from-green-50/40 to-transparent z-0 pointer-events-none">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+                    <div class="max-w-2xl">
+                        <div
+                            class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100/50 mb-6 shadow-sm">
+                            <span class="relative flex h-3 w-3">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-blue"></span>
+                            </span>
+                            <span class="text-brand-blue font-black uppercase tracking-widest text-[11px]">Core
+                                Services</span>
+                        </div>
+                        <h3
+                            class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                            Future-Ready <br class="hidden md:block" /> <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-teal-400">Energy
+                                Solutions</span></h3>
+                    </div>
+                    <div class="hidden md:block mb-4">
+                        <p class="text-gray-500 max-w-sm text-right leading-relaxed">We deliver high-yield solar arrays
+                            engineered for extreme longevity, efficiency, and aesthetics.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service 1: Residential Solar -->
+                    <div
+                        class="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.1)] transition-all duration-500 group border border-gray-100/80 relative transform hover:-translate-y-2 overflow-hidden flex flex-col h-full z-10">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-blue-100/60 to-transparent rounded-bl-[4rem] z-0 transition-transform duration-700 group-hover:scale-[2.5]">
+                        </div>
+
+                        <div class="relative z-10 flex-grow">
+                            <div
+                                class="w-16 h-16 bg-white border border-blue-50 shadow-sm rounded-2xl flex items-center justify-center text-brand-blue mb-8 group-hover:bg-brand-blue group-hover:text-white group-hover:shadow-[0_10px_20px_rgba(0,123,255,0.3)] transition-all duration-500 transform group-hover:rotate-12 group-hover:scale-110">
+                                <i class="fa-solid fa-house-chimney text-2xl"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-blue transition-colors">
+                                Residential</h3>
+                            <p class="text-gray-500 leading-relaxed text-sm mb-8">Premium setups designed specifically
+                                for modern homes to maximize savings while preserving architectural beauty.</p>
+                        </div>
+
+                        <div
+                            class="relative z-10 mt-auto pt-6 border-t border-gray-100 group-hover:border-blue-100 transition-colors">
+                            <a href="#"
+                                class="text-gray-900 font-bold flex items-center group-hover:text-brand-blue transition-colors text-[10px] uppercase tracking-[0.2em]">
+                                Explore Options <i
+                                    class="fa-solid fa-arrow-right-long ml-3 transform group-hover:translate-x-2 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Commercial & Industrial -->
+                    <div
+                        class="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.1)] transition-all duration-500 group border border-gray-100/80 relative transform hover:-translate-y-2 overflow-hidden flex flex-col h-full z-10">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-green-100/60 to-transparent rounded-bl-[4rem] z-0 transition-transform duration-700 group-hover:scale-[2.5]">
+                        </div>
+
+                        <div class="relative z-10 flex-grow">
+                            <div
+                                class="w-16 h-16 bg-white border border-green-50 shadow-sm rounded-2xl flex items-center justify-center text-brand-green mb-8 group-hover:bg-brand-green group-hover:text-white group-hover:shadow-[0_10px_20px_rgba(37,211,102,0.3)] transition-all duration-500 transform group-hover:-rotate-12 group-hover:scale-110">
+                                <i class="fa-solid fa-industry text-2xl"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-brand-green transition-colors">
+                                Commercial</h3>
+                            <p class="text-gray-500 leading-relaxed text-sm mb-8">Large-scale, high-yield energy
+                                solutions engineered to drastically reduce grid dependence for factories and offices.
+                            </p>
+                        </div>
+
+                        <div
+                            class="relative z-10 mt-auto pt-6 border-t border-gray-100 group-hover:border-green-100 transition-colors">
+                            <a href="#"
+                                class="text-gray-900 font-bold flex items-center group-hover:text-brand-green transition-colors text-[10px] uppercase tracking-[0.2em]">
+                                Explore Options <i
+                                    class="fa-solid fa-arrow-right-long ml-3 transform group-hover:translate-x-2 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Solar Maintenance -->
+                    <div
+                        class="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.1)] transition-all duration-500 group border border-gray-100/80 relative transform hover:-translate-y-2 overflow-hidden flex flex-col h-full z-10">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-indigo-100/60 to-transparent rounded-bl-[4rem] z-0 transition-transform duration-700 group-hover:scale-[2.5]">
+                        </div>
+
+                        <div class="relative z-10 flex-grow">
+                            <div
+                                class="w-16 h-16 bg-white border border-indigo-50 shadow-sm rounded-2xl flex items-center justify-center text-indigo-500 mb-8 group-hover:bg-indigo-500 group-hover:text-white group-hover:shadow-[0_10px_20px_rgba(99,102,241,0.3)] transition-all duration-500 transform group-hover:rotate-12 group-hover:scale-110">
+                                <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-indigo-500 transition-colors">
+                                Maintenance</h3>
+                            <p class="text-gray-500 leading-relaxed text-sm mb-8">Proactive monitoring, professional
+                                cleaning, and expert repair services to keep existing arrays at absolute peak
+                                efficiency.</p>
+                        </div>
+
+                        <div
+                            class="relative z-10 mt-auto pt-6 border-t border-gray-100 group-hover:border-indigo-100 transition-colors">
+                            <a href="services.html"
+                                class="text-gray-900 font-bold flex items-center group-hover:text-indigo-500 transition-colors text-[10px] uppercase tracking-[0.2em]">
+                                Service Details <i
+                                    class="fa-solid fa-arrow-right-long ml-3 transform group-hover:translate-x-2 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Net Metering -->
+                    <div
+                        class="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.1)] transition-all duration-500 group border border-gray-100/80 relative transform hover:-translate-y-2 overflow-hidden flex flex-col h-full z-10">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-teal-100/60 to-transparent rounded-bl-[4rem] z-0 transition-transform duration-700 group-hover:scale-[2.5]">
+                        </div>
+
+                        <div class="relative z-10 flex-grow">
+                            <div
+                                class="w-16 h-16 bg-white border border-teal-50 shadow-sm rounded-2xl flex items-center justify-center text-teal-500 mb-8 group-hover:bg-teal-500 group-hover:text-white group-hover:shadow-[0_10px_20px_rgba(20,184,166,0.3)] transition-all duration-500 transform group-hover:-rotate-12 group-hover:scale-110">
+                                <i class="fa-solid fa-arrow-right-arrow-left text-2xl"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-500 transition-colors">
+                                Net Metering</h3>
+                            <p class="text-gray-500 leading-relaxed text-sm mb-8">Bidirectional power strategies letting
+                                you effortlessly sell excess energy back to the grid for maximized return on investment.
+                            </p>
+                        </div>
+
+                        <div
+                            class="relative z-10 mt-auto pt-6 border-t border-gray-100 group-hover:border-teal-100 transition-colors">
+                            <a href="services.html"
+                                class="text-gray-900 font-bold flex items-center group-hover:text-teal-500 transition-colors text-[10px] uppercase tracking-[0.2em]">
+                                Learn More <i
+                                    class="fa-solid fa-arrow-right-long ml-3 transform group-hover:translate-x-2 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to action Services -->
+                <div class="text-center mt-20">
+                    <a href="services.html"
+                        class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-gray-900 transition-all duration-300 bg-white border border-gray-200 rounded-full hover:border-brand-blue hover:text-brand-blue hover:shadow-lg group">
+                        View Comprehensive Services <i
+                            class="fa-solid fa-arrow-right-long ml-3 transform group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-we-work" class="py-32 bg-[#f4f6f8] relative border-t border-gray-200/60 overflow-hidden">
+            <!-- Background glow -->
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[150px] pointer-events-none">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-24">
+                    <div
+                        class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white border border-gray-200 mb-6 shadow-sm backdrop-blur-md">
+                        <span class="relative flex h-3 w-3">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-green"></span>
+                        </span>
+                        <span class="text-gray-600 font-bold uppercase tracking-[0.2em] text-[11px]">Seamless
+                            Process</span>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight">How It <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-teal-500 drop-shadow-sm">Works</span>
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8 relative mt-10">
+                    <!-- Glowing Connecting Line for Desktop -->
+                    <div
+                        class="hidden md:block absolute top-[45px] left-[12.5%] right-[12.5%] h-1 bg-gray-200 z-0 rounded-full overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-brand-blue/30 via-brand-green/30 to-brand-blue/30 animate-pulse">
+                        </div>
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div class="relative text-center group z-10">
+                        <div
+                            class="w-24 h-24 mx-auto bg-white border border-gray-200 rounded-2xl flex items-center justify-center text-3xl text-gray-400 group-hover:border-brand-blue group-hover:text-brand-blue group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(0,123,255,0.15)] transition-all duration-500 mb-8 relative overflow-hidden rotate-45 group-hover:rotate-0">
+                            <div
+                                class="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                            <i
+                                class="fa-solid fa-comments -rotate-45 group-hover:rotate-0 transition-transform duration-500"></i>
+                        </div>
+                        <div
+                            class="bg-white/80 border border-white rounded-2xl p-6 backdrop-blur-sm shadow-sm group-hover:bg-white transition-colors duration-500 group-hover:-translate-y-1 transform">
+                            <h4 class="text-xl font-bold text-gray-900 mb-3 flex items-center justify-center gap-2">
+                                <span
+                                    class="w-6 h-6 rounded-full bg-brand-blue text-xs flex items-center justify-center text-white">1</span>
+                                Consultation
+                            </h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Free site survey and professional advice
+                                tailored to your energy needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative text-center group z-10">
+                        <div
+                            class="w-24 h-24 mx-auto bg-white border border-gray-200 rounded-2xl flex items-center justify-center text-3xl text-gray-400 group-hover:border-brand-green group-hover:text-brand-green group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(37,211,102,0.15)] transition-all duration-500 mb-8 md:mt-12 lg:mt-0 relative overflow-hidden rotate-45 group-hover:rotate-0">
+                            <div
+                                class="absolute inset-0 bg-brand-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                            <i
+                                class="fa-solid fa-pen-ruler -rotate-45 group-hover:rotate-0 transition-transform duration-500"></i>
+                        </div>
+                        <div
+                            class="bg-white/80 border border-white rounded-2xl p-6 backdrop-blur-sm shadow-sm group-hover:bg-white transition-colors duration-500 group-hover:-translate-y-1 transform">
+                            <h4 class="text-xl font-bold text-gray-900 mb-3 flex items-center justify-center gap-2">
+                                <span
+                                    class="w-6 h-6 rounded-full bg-brand-green text-xs flex items-center justify-center text-white">2</span>
+                                Design
+                            </h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Custom system engineering and a fully
+                                transparent, competitive price quote.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative text-center group z-10">
+                        <div
+                            class="w-24 h-24 mx-auto bg-white border border-gray-200 rounded-2xl flex items-center justify-center text-3xl text-gray-400 group-hover:border-brand-blue group-hover:text-brand-blue group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(0,123,255,0.15)] transition-all duration-500 mb-8 relative overflow-hidden rotate-45 group-hover:rotate-0">
+                            <div
+                                class="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                            <i
+                                class="fa-solid fa-screwdriver-wrench -rotate-45 group-hover:rotate-0 transition-transform duration-500"></i>
+                        </div>
+                        <div
+                            class="bg-white/80 border border-white rounded-2xl p-6 backdrop-blur-sm shadow-sm group-hover:bg-white transition-colors duration-500 group-hover:-translate-y-1 transform">
+                            <h4 class="text-xl font-bold text-gray-900 mb-3 flex items-center justify-center gap-2">
+                                <span
+                                    class="w-6 h-6 rounded-full bg-brand-blue text-xs flex items-center justify-center text-white">3</span>
+                                Install
+                            </h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Seamless setup and mounting performed
+                                rapidly by an expert technical team.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative text-center group z-10">
+                        <div
+                            class="w-24 h-24 mx-auto bg-white border border-gray-200 rounded-2xl flex items-center justify-center text-3xl text-gray-400 group-hover:border-brand-green group-hover:text-brand-green group-hover:-translate-y-2 group-hover:shadow-[0_10px_30px_rgba(37,211,102,0.15)] transition-all duration-500 mb-8 md:mt-12 lg:mt-0 relative overflow-hidden rotate-45 group-hover:rotate-0">
+                            <div
+                                class="absolute inset-0 bg-brand-green/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                            <i
+                                class="fa-solid fa-bolt -rotate-45 group-hover:rotate-0 transition-transform duration-500"></i>
+                        </div>
+                        <div
+                            class="bg-white/80 border border-white rounded-2xl p-6 backdrop-blur-sm shadow-sm group-hover:bg-white transition-colors duration-500 group-hover:-translate-y-1 transform">
+                            <h4 class="text-xl font-bold text-gray-900 mb-3 flex items-center justify-center gap-2">
+                                <span
+                                    class="w-6 h-6 rounded-full bg-brand-green text-xs flex items-center justify-center text-white">4</span>
+                                Metering
+                            </h4>
+                            <p class="text-gray-500 text-sm leading-relaxed">Full technical assistance with the approval
+                                and installation of the Green Meter.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-20">
+                    <a href="about.html"
+                        class="inline-flex items-center text-gray-600 font-bold hover:text-brand-blue transition-colors text-sm uppercase tracking-widest group border border-gray-300 hover:border-brand-blue px-8 py-4 rounded-full bg-white hover:bg-blue-50/50 shadow-sm hover:shadow-md">
+                        Learn About Our Mission <i
+                            class="fa-solid fa-arrow-right-long ml-3 transform group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator" class="py-32 bg-[#f4f6f8] relative overflow-hidden border-t border-gray-200/60">
+            <!-- Dynamic abstract backgrounds -->
+            <div
+                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 mix-blend-multiply pointer-events-none">
+            </div>
+            <div
+                class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-green/10 rounded-full blur-[120px] pointer-events-none translate-x-1/3 -translate-y-1/3">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-blue/10 rounded-full blur-[150px] pointer-events-none -translate-x-1/3 translate-y-1/3">
+            </div>
+
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <div
+                        class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white border border-gray-200 mb-6 shadow-sm">
+                        <span class="w-2.5 h-2.5 rounded-full bg-brand-green animate-pulse"></span>
+                        <span class="text-gray-900 font-bold uppercase tracking-widest text-[11px]">Intelligent
+                            Estimation</span>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">Smart Solar <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-teal-500">Calculator</span>
+                    </h3>
+                    <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">Instantly project your system
+                        size, costs, and savings with our precision-engineered estimation model.</p>
+                </div>
+
+                <!-- Calculator Card -->
+                <div
+                    class="bg-white/80 backdrop-blur-xl border border-white rounded-[2.5rem] p-8 md:p-12 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] relative z-10">
+                    <form id="solarSmartForm" class="relative">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 mb-12">
+                            <!-- Current Load -->
+                            <div class="group">
+                                <label
+                                    class="flex items-center gap-2 text-gray-900 font-bold mb-3 text-sm tracking-wide">
+                                    <i class="fa-solid fa-plug-circle-bolt text-brand-blue"></i> Current Load (kVA)
+                                </label>
+                                <div class="relative">
+                                    <input type="number" id="currentLoad" step="any" required placeholder="e.g. 2.5"
+                                        class="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 font-medium placeholder-gray-400 focus:outline-none focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 transition-all shadow-inner hover:bg-white">
+                                </div>
+                            </div>
+
+                            <!-- Future Load -->
+                            <div class="group">
+                                <label
+                                    class="flex items-center gap-2 text-gray-900 font-bold mb-3 text-sm tracking-wide">
+                                    <i class="fa-solid fa-chart-line text-brand-green"></i> Future Target Load (kVA)
+                                </label>
+                                <div class="relative">
+                                    <input type="number" id="futureLoad" step="any" required placeholder="e.g. 4.5"
+                                        class="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 font-medium placeholder-gray-400 focus:outline-none focus:border-brand-green focus:ring-4 focus:ring-brand-green/10 transition-all shadow-inner hover:bg-white">
+                                </div>
+                            </div>
+
+                            <!-- Desired System Size -->
+                            <div class="group">
+                                <label
+                                    class="flex items-center gap-2 text-gray-900 font-bold mb-3 text-sm tracking-wide">
+                                    <i class="fa-solid fa-solar-panel text-brand-blue"></i> Desired System Size (kW)
+                                </label>
+                                <div class="relative">
+                                    <input type="number" id="desiredKW" step="any" required placeholder="e.g. 5.5"
+                                        class="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 font-medium placeholder-gray-400 focus:outline-none focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 transition-all shadow-inner hover:bg-white">
+                                </div>
+                            </div>
+
+                            <!-- Price per Watt -->
+                            <div class="group">
+                                <label
+                                    class="flex items-center gap-2 text-gray-900 font-bold mb-3 text-sm tracking-wide">
+                                    <i class="fa-solid fa-money-bill-wave text-brand-green"></i> Panel Price (PKR/Watt)
+                                </label>
+                                <div class="relative">
+                                    <input type="number" id="pricePerWatt" step="any" required placeholder="e.g. 30.5"
+                                        class="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 font-medium placeholder-gray-400 focus:outline-none focus:border-brand-green focus:ring-4 focus:ring-brand-green/10 transition-all shadow-inner hover:bg-white">
+                                </div>
+                            </div>
+
+                            <!-- Panel Brand & Wattage -->
+                            <div class="md:col-span-2 group">
+                                <label
+                                    class="flex items-center gap-2 text-gray-900 font-bold mb-3 text-sm tracking-wide">
+                                    <i class="fa-solid fa-microchip text-brand-blue"></i> Panel Technology & Model
+                                </label>
+                                <div class="relative">
+                                    <select id="panelSelect" required
+                                        class="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 font-medium focus:outline-none focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10 transition-all shadow-inner hover:bg-white cursor-pointer appearance-none">
+                                        <optgroup label="Astro Energy" class="bg-white text-gray-600">
+                                            <option value="610">610 W (N‑type) - High Efficiency</option>
+                                        </optgroup>
+                                        <optgroup label="Canadian Solar" class="bg-white text-gray-600">
+                                            <option value="585">585 W (N‑type)</option>
+                                            <option value="715">715 W (N‑type bifacial) - Extreme Yield</option>
+                                        </optgroup>
+                                        <optgroup label="Jinko Solar" class="bg-white text-gray-600">
+                                            <option value="585">585 W (N‑type)</option>
+                                            <option value="715">715 W (N‑type)</option>
+                                        </optgroup>
+                                        <optgroup label="Other Brands" class="bg-white text-gray-600">
+                                            <option value="575">575 W Standard</option>
+                                            <option value="730">730 W Ultra-High Output</option>
+                                        </optgroup>
+                                    </select>
+                                    <div
+                                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-gray-400">
+                                        <i class="fa-solid fa-chevron-down text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row justify-center items-center gap-5 pt-6 border-t border-gray-100">
+                            <button type="submit"
+                                class="relative inline-flex items-center justify-center px-12 py-5 text-lg font-bold text-white transition-all duration-300 bg-gray-900 rounded-full hover:bg-brand-green shadow-xl hover:shadow-[0_15px_40px_-10px_rgba(37,211,102,0.6)] hover:-translate-y-1 focus:outline-none group w-full sm:w-auto overflow-hidden">
+                                <span
+                                    class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
+                                <span class="relative flex items-center gap-3">
+                                    Run Calculation <i
+                                        class="fa-solid fa-calculator ml-1 transform group-hover:scale-110 transition-transform"></i>
+                                </span>
+                            </button>
+                            <button type="reset" id="resetCalcBtn"
+                                class="inline-flex justify-center items-center bg-white hover:bg-gray-50 text-gray-600 hover:text-gray-900 font-bold py-5 px-10 rounded-full w-full sm:w-auto transition-all border border-gray-200 hover:border-gray-300 shadow-sm cursor-pointer text-lg">
+                                Reset <i class="fa-solid fa-rotate-right ml-2 text-sm"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="solarResult"
+                        class="mt-12 hidden bg-gradient-to-br from-blue-50 to-indigo-50/50 rounded-2xl p-8 border border-blue-100/50 shadow-inner backdrop-blur-sm">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-32 bg-white relative border-t border-gray-100 overflow-hidden">
+            <!-- Background Enhancements -->
+            <div
+                class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/3">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-green/5 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3">
+            </div>
+            <div
+                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.02]">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center mb-20">
+                    <div
+                        class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100/50 mb-6 shadow-sm">
+                        <span class="relative flex h-3 w-3">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-blue"></span>
+                        </span>
+                        <span class="text-brand-blue font-black uppercase tracking-widest text-[11px]">Our
+                            Portfolio</span>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
+                        Featured <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-blue-500">Projects</span>
+                    </h3>
+                    <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">Discover our most impactful solar
+                        installations, driving sustainability and extreme cost savings across the region.</p>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Project Card 1: Residential -->
+                    <div
+                        class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 border border-gray-100 bg-white">
+                        <div
+                            class="absolute inset-0 bg-brand-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 mix-blend-overlay z-10 pointer-events-none">
+                        </div>
+                        <div class="h-96 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Residential Solar"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-in-out">
+                            <!-- Overlay Gradient -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/60 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute top-6 right-6 z-20">
+                            <span
+                                class="bg-white/20 backdrop-blur-md border border-white/30 text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider shadow-lg flex items-center gap-2">
+                                <i class="fa-solid fa-house-chimney text-brand-green"></i> Residential
+                            </span>
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-8 z-20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <h4
+                                class="text-3xl font-bold text-white mb-3 group-hover:text-brand-green transition-colors duration-300">
+                                5kW Solar Setup</h4>
+                            <p
+                                class="text-gray-300 text-sm mb-6 opacity-0 h-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 ease-in-out leading-relaxed hidden group-hover:block">
+                                Complete home energy independence. High-efficiency panels cutting grid dependence by up
+                                to 100%.
+                            </p>
+
+                            <!-- Metrics -->
+                            <div
+                                class="flex flex-wrap items-center gap-4 text-xs font-semibold text-white/80 border-t border-white/20 pt-5 mt-2">
+                                <span class="flex items-center gap-1.5"><i
+                                        class="fa-solid fa-bolt text-brand-green"></i> 5 kW</span>
+                                <span class="hidden sm:block w-1 h-1 rounded-full bg-white/30"></span>
+                                <span class="flex items-center gap-1.5"><i
+                                        class="fa-regular fa-calendar text-brand-blue"></i> Oct 2024</span>
+                                <span class="hidden sm:block w-1 h-1 rounded-full bg-white/30"></span>
+                                <span class="flex items-center gap-1.5"><i
+                                        class="fa-solid fa-location-dot text-red-400"></i> DHA Lahore</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Commercial -->
+                    <div
+                        class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 border border-gray-100 bg-white">
+                        <div
+                            class="absolute inset-0 bg-brand-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 mix-blend-overlay z-10 pointer-events-none">
+                        </div>
+                        <div class="h-96 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Commercial Solar"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-in-out">
+                            <!-- Overlay Gradient -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/60 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute top-6 right-6 z-20">
+                            <span
+                                class="bg-brand-blue/80 backdrop-blur-md border border-brand-blue/50 text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider shadow-lg flex items-center gap-2">
+                                <i class="fa-solid fa-industry"></i> Commercial
+                            </span>
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-8 z-20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <h4
+                                class="text-3xl font-bold text-white mb-3 group-hover:text-brand-blue transition-colors duration-300">
+                                50kW Industrial Setup</h4>
+                            <p
+                                class="text-gray-300 text-sm mb-6 opacity-0 h-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 ease-in-out leading-relaxed hidden group-hover:block">
+                                Scalable solar solution powering a massive manufacturing facility, reducing overhead
+                                expenses significantly.
+                            </p>
+
+                            <!-- Metrics -->
+                            <div
+                                class="flex flex-wrap items-center gap-4 text-xs font-semibold text-white/80 border-t border-white/20 pt-5 mt-2">
+                                <span class="flex items-center gap-1.5"><i
+                                        class="fa-solid fa-bolt text-brand-green"></i> 50 kW</span>
+                                <span class="hidden sm:block w-1 h-1 rounded-full bg-white/30"></span>
+                                <span class="flex items-center gap-1.5"><i
+                                        class="fa-solid fa-industry text-brand-blue"></i> Factory</span>
+                                <span class="hidden sm:block w-1 h-1 rounded-full bg-white/30"></span>
+                                <span class="flex items-center gap-1.5"><i
+                                        class="fa-solid fa-location-dot text-red-400"></i> Sundar Estate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: Net Metering -->
+                    <div
+                        class="group relative rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 border border-gray-100 bg-white">
+                        <div
+                            class="absolute inset-0 bg-brand-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 mix-blend-overlay z-10 pointer-events-none">
+                        </div>
+                        <div class="h-96 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Solar Farm"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-in-out">
+                            <!-- Overlay Gradient -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/60 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute top-6 right-6 z-20">
+                            <span
+                                class="bg-brand-green/80 backdrop-blur-md border border-brand-green/50 text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider shadow-lg flex items-center gap-2">
+                                <i class="fa-solid fa-leaf"></i> Net Metering
+                            </span>
+                        </div>
+
+                        <!-- Content -->
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-8 z-20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <h4
+                                class="text-3xl font-bold text-white mb-3 group-hover:text-brand-green transition-colors duration-300">
+                                15kW Grid-Tied System</h4>
+                            <p
+                                class="text-gray-300 text-sm mb-6 opacity-0 h-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 ease-in-out leading-relaxed hidden group-hover:block">
+                                Maximizing returns with a robust net metering setup, turning passive rooftops into
+                                active revenue streams.
+                            </p>
+
+                            <!-- Metrics -->
+                            <div
+                                class="flex flex-wrap items-center gap-4 text-xs font-semibold text-white/80 border-t border-white/20 pt-5 mt-2">
+                                <span class="flex items-center gap-1.5"><i
+                                        class="fa-solid fa-bolt text-brand-green"></i> 15 kW</span>
+                                <span class="hidden sm:block w-1 h-1 rounded-full bg-white/30"></span>
+                                <span class="flex items-center gap-1.5"><i
+                                        class="fa-solid fa-arrow-right-arrow-left text-brand-blue"></i>
+                                    Bi-directional</span>
+                                <span class="hidden sm:block w-1 h-1 rounded-full bg-white/30"></span>
+                                <span class="flex items-center gap-1.5"><i
+                                        class="fa-solid fa-location-dot text-red-400"></i> Bahria Town</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-20">
+                    <a href="project.html"
+                        class="relative inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-white transition-all duration-300 bg-gray-900 rounded-full hover:bg-brand-blue shadow-xl hover:shadow-[0_15px_40px_-10px_rgba(0,123,255,0.7)] hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue group overflow-hidden">
+                        <span
+                            class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
+                        <span class="relative flex items-center gap-3">
+                            Explore Full Gallery <i
+                                class="fa-solid fa-arrow-right-long transform group-hover:translate-x-2 transition-transform"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Partners Section -->
+        <section class="py-24 bg-white border-t border-gray-200/60 relative overflow-hidden">
+            <div
+                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]">
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <div
+                        class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+                        <span class="text-brand-blue font-bold uppercase tracking-widest text-xs">Trusted By</span>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Our Global Partners</h3>
+                    <p class="text-gray-500 max-w-2xl mx-auto">We collaborate with the world's leading brands to bring
+                        you the most reliable and efficient energy solutions.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
+                    <!-- Partner 1 -->
+                    <div
+                        class="bg-[#f8fafc] rounded-2xl border border-gray-100 flex items-center justify-center p-8 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-white group cursor-pointer">
+                        <img src="partners-logo/huawei.png" alt="Huawei"
+                            class="w-auto max-h-12 md:max-h-16 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Partner 2 -->
+                    <div
+                        class="bg-[#f8fafc] rounded-2xl border border-gray-100 flex items-center justify-center p-8 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-white group cursor-pointer">
+                        <img src="partners-logo/grow.png" alt="Growatt"
+                            class="w-auto max-h-12 md:max-h-16 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Partner 3 -->
+                    <div
+                        class="bg-[#f8fafc] rounded-2xl border border-gray-100 flex items-center justify-center p-8 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-white group cursor-pointer">
+                        <img src="partners-logo/solis.png" alt="Solis"
+                            class="w-auto max-h-12 md:max-h-16 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Partner 4 -->
+                    <div
+                        class="bg-[#f8fafc] rounded-2xl border border-gray-100 flex items-center justify-center p-8 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-white group cursor-pointer">
+                        <img src="partners-logo/jinko-logo2.webp" alt="Jinko Solar"
+                            class="w-auto max-h-12 md:max-h-16 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Partner 5 -->
+                    <div
+                        class="bg-[#f8fafc] rounded-2xl border border-gray-100 flex items-center justify-center p-8 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-white group cursor-pointer">
+                        <img src="partners-logo/Canadian-Solar-Logo-Vector.png" alt="Canadian Solar"
+                            class="w-auto max-h-12 md:max-h-16 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Partner 6 -->
+                    <div
+                        class="bg-[#f8fafc] rounded-2xl border border-gray-100 flex items-center justify-center p-8 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-white group cursor-pointer">
+                        <img src="partners-logo/longi.jpg" alt="Longi"
+                            class="w-auto max-h-12 md:max-h-16 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Partner 7 -->
+                    <div
+                        class="bg-[#f8fafc] rounded-2xl border border-gray-100 flex items-center justify-center p-8 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-white group cursor-pointer">
+                        <img src="partners-logo/astro.png" alt="Astro Energy"
+                            class="w-auto max-h-12 md:max-h-16 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
+                    </div>
+                    <!-- Partner 8 -->
+                    <div
+                        class="bg-[#f8fafc] rounded-2xl border border-gray-100 flex items-center justify-center p-8 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 hover:bg-white group cursor-pointer">
+                        <img src="partners-logo/chint.webp" alt="Chint"
+                            class="w-auto max-h-12 md:max-h-16 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="bg-[#0a0f1c] text-gray-400 pt-32 pb-12 border-t border-white/5 relative overflow-hidden">
+            <!-- Abstract glowing background elements -->
+            <div
+                class="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[150px] pointer-events-none translate-x-1/3 -translate-y-1/3">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-green/5 rounded-full blur-[150px] pointer-events-none -translate-x-1/3 translate-y-1/3">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-24">
+                    <div class="lg:col-span-4 pr-0 lg:pr-8">
+                        <div class="flex items-center gap-3 mb-8">
+                            <img src="aalogo.png" alt="Reliance Energy Logo"
+                                class="h-10 w-auto brightness-0 invert opacity-100">
+                            <h2 class="text-2xl font-black leading-none tracking-tight text-white">RELIANCE
+                                <br><span
+                                    class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-teal-400 text-lg">ENERGY</span>
+                            </h2>
+                        </div>
+                        <p class="text-gray-400 mb-8 leading-relaxed text-sm">Reliance Energy brings over 15 years of
+                            excellence to every project. We engineer custom, high-yield renewable energy solutions
+                            ensuring uninterrupted power and maximum ROI.</p>
+
+                        <!-- Contact Info -->
+                        <div class="space-y-4 mb-8">
+                            <a href="#"
+                                class="group flex items-start text-sm text-gray-400 hover:text-white transition-colors">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-brand-green/20 group-hover:border-brand-green/50 transition-colors flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot text-brand-green text-xs"></i>
+                                </div>
+                                <span class="mt-1 leading-relaxed">21 A Ext, opposite McDonald's,<br>Block A Phase 1
+                                    Judicial Colony,<br>Lahore, 54000</span>
+                            </a>
+                            <a href="tel:03111777861"
+                                class="group flex items-center text-sm text-gray-400 hover:text-white transition-colors">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-4 group-hover:bg-brand-blue/20 group-hover:border-brand-blue/50 transition-colors flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-brand-blue text-xs"></i>
+                                </div>
+                                0311 1777861
+                            </a>
+                        </div>
+
+                        <!-- Socials -->
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-brand-blue hover:text-white hover:border-brand-blue transition-all transform hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(0,123,255,0.4)]"><i
+                                    class="fa-brands fa-facebook-f text-sm"></i></a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-[#1DA1F2] hover:text-white hover:border-[#1DA1F2] transition-all transform hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(29,161,242,0.4)]"><i
+                                    class="fa-brands fa-twitter text-sm"></i></a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-[#E1306C] hover:text-white hover:border-[#E1306C] transition-all transform hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(225,48,108,0.4)]"><i
+                                    class="fa-brands fa-instagram text-sm"></i></a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-[#0077B5] hover:text-white hover:border-[#0077B5] transition-all transform hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(0,119,181,0.4)]"><i
+                                    class="fa-brands fa-linkedin-in text-sm"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-2 lg:col-start-6">
+                        <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-[0.2em]">Company</h3>
+                        <ul class="space-y-4 text-sm font-medium">
+                            <li><a href="about.html"
+                                    class="text-gray-400 hover:text-white hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-blue before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">About
+                                    Us</a></li>
+                            <li><a href="team.html"
+                                    class="text-gray-400 hover:text-white hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-blue before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">Leadership</a>
+                            </li>
+                            <li><a href="career.html"
+                                    class="text-gray-400 hover:text-white hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-blue before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">Careers</a>
+                            </li>
+                            <li><a href="project.html"
+                                    class="text-gray-400 hover:text-white hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-blue before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">Portfolio</a>
+                            </li>
+                            <li><a href="#contact"
+                                    class="text-gray-400 hover:text-white hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-blue before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-2">
+                        <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-[0.2em]">Solutions</h3>
+                        <ul class="space-y-4 text-sm font-medium">
+                            <li><a href="services.html"
+                                    class="text-gray-400 hover:text-white hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-green before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">Residential
+                                    Solar</a></li>
+                            <li><a href="services.html"
+                                    class="text-gray-400 hover:text-white hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-green before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">Commercial</a>
+                            </li>
+                            <li><a href="services.html"
+                                    class="text-gray-400 hover:text-white hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-green before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">Maintenance</a>
+                            </li>
+                            <li><a href="services.html"
+                                    class="text-gray-400 hover:text-white hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-green before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">Net
+                                    Metering</a></li>
+                            <li><a href="index.html#calculator"
+                                    class="text-brand-green hover:text-green-400 hover:pl-2 relative transition-all duration-300 before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:bg-brand-green before:rounded-full before:opacity-0 hover:before:opacity-100 hover:before:left-0">Solar
+                                    Calculator</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-3">
+                        <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-[0.2em]">Newsletter</h3>
+                        <p class="text-gray-400 mb-6 text-sm leading-relaxed">Subscribe for exclusive insights into
+                            green tech and solar policies.</p>
+                        <form class="relative group mt-2">
+                            <input type="email" placeholder="Your email address..."
+                                class="bg-white/5 text-white pl-5 pr-14 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue border border-white/10 w-full text-sm transition-all group-hover:border-white/30 group-focus-within:border-brand-blue/50 group-focus-within:bg-white/10 placeholder-gray-500">
+                            <button type="submit"
+                                class="absolute right-2 top-2 bottom-2 bg-brand-blue hover:bg-blue-500 text-white rounded-lg px-5 flex items-center justify-center transition-colors shadow-lg">
+                                <i class="fa-solid fa-arrow-right-long text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div
+                    class="border-t border-white/10 pt-8 pb-4 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-gray-500 text-sm font-medium">&copy; 2026 <span class="text-white">Reliance
+                            Energy</span>. All rights reserved.</p>
+                    <div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-500">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-white transition-colors">Legal</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/prices.js"></script>
+        <script src="js/script.js"></script>
+    </div>
+</body>
+
+</html>

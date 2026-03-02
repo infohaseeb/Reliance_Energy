@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliance Energy - Energized by Sun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans text-gray-800">
+    <div id="boxed-wrapper" class="max-w-[1440px] mx-auto bg-[#f4f6f8] sm:shadow-2xl relative overflow-hidden flex flex-col min-h-screen">
+
+    <header id="header-container" class="fixed w-full max-w-[1440px] mx-auto left-0 right-0 z-50 transition-all duration-500 top-0">
+
+        <div class="px-0 lg:px-6 pt-0 lg:pt-5 transition-all duration-500" id="nav-wrapper">
+            <div id="navbar"
+                class="mx-auto glass-nav max-w-7xl bg-white/80 lg:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border-b lg:border border-white/60 transition-all duration-500 flex flex-col overflow-hidden">
+
+                <!-- Integrated Topbar -->
+                <div id="topbar" style="height: 40px; opacity: 1;"
+                    class="bg-white/40 text-gray-600 text-[11px] uppercase tracking-wider font-semibold transition-all duration-500 overflow-hidden hidden lg:flex items-center border-b border-gray-200/50 px-4 sm:px-6 lg:px-8 w-full z-20">
+                    <div class="w-full flex justify-between items-center">
+                        <div class="flex space-x-8">
+                            <a href="mailto:info@relianceenergy.com"
+                                class="flex items-center hover:text-brand-blue transition group">
+                                <i class="fa-solid fa-envelope text-brand-green mr-2 transition"></i>
+                                info@relianceenergy.com
+                            </a>
+                            <a href="tel:03111777861" class="flex items-center hover:text-brand-blue transition group">
+                                <i class="fa-solid fa-phone text-brand-green mr-2 transition"></i> 0311 1777861
+                            </a>
+                        </div>
+                        <div class="flex space-x-6 items-center">
+                            <span class="flex items-center">
+                                <i class="fa-regular fa-clock text-brand-blue mr-2"></i> Mon - Fri: 9:00 AM - 6:00 PM
+                            </span>
+                            <div class="flex space-x-4 pl-6 border-l border-gray-300">
+                                <a href="project.html" class="hover:text-brand-blue transition transform hover:scale-110"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="career.html" class="hover:text-brand-blue transition transform hover:scale-110"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="hover:text-brand-blue transition transform hover:scale-110"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Navigation -->
+                <nav class="h-[76px] flex items-center justify-between px-4 sm:px-6 lg:px-8 w-full z-10">
+
+                    <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                        <img src="aalogo.png" alt="Reliance Energy Logo"
+                            class="h-12 w-auto object-contain drop-shadow-sm">
+                        <div class="hidden sm:block">
+                            <h1 class="font-extrabold text-xl tracking-tight text-gray-900 leading-none">RELIANCE <span
+                                    class="text-brand-blue">ENERGY</span></h1>
+                            <p class="text-[9px] text-brand-green font-bold tracking-widest uppercase mt-0.5">Energized
+                                by
+                                Sun</p>
+                        </div>
+                    </div>
+
+                    <div class="hidden lg:flex space-x-6 items-center h-full">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="services.html#how-we-work" class="nav-link">How We Work</a>
+
+                        <a href="project.html" class="nav-link">Projects</a>
+
+                        <a href="team.html" class="nav-link">Team</a>
+
+                        <div class="flex items-center space-x-3 ml-2">
+                            <a href="#calculator"
+                                class="border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-5 py-2 rounded-full font-bold transition shadow-sm transform hover:-translate-y-0.5 whitespace-nowrap">
+                                <i class="fa-solid fa-calculator mr-1.5"></i> Solar Calculator
+                            </a>
+                            <a href="#contact"
+                                class="bg-gradient-to-r from-brand-blue to-blue-600 hover:from-blue-600 hover:to-blue-800 text-white px-7 py-2.5 rounded-full font-bold transition shadow-[0_8px_20px_-6px_rgba(0,123,255,0.6)] hover:shadow-[0_10px_25px_-6px_rgba(0,123,255,0.8)] transform hover:-translate-y-0.5 border border-blue-400/30 whitespace-nowrap">
+                                Get a Quote
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:hidden flex items-center">
+                        <button onclick="toggleMenu()" class="text-gray-800 hover:text-brand-blue focus:outline-none">
+                            <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 absolute w-full shadow-2xl origin-top transition-all duration-300">
+            <div class="px-4 pt-4 pb-8 space-y-2">
+                <a href="index.html"
+                    class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">Home</a>
+                <a href="about.html"
+                    class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">About
+                    Company</a>
+                <a href="services.html"
+                    class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">Services</a>
+                <a href="#"
+                    class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">All
+                    Projects</a>
+                <a href="#"
+                    class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">Project
+                    Analyst</a>
+                <a href="team.html"
+                    class="block px-4 py-3 rounded-xl text-base font-bold text-gray-800 hover:text-brand-blue hover:bg-blue-50 transition">Team</a>
+            </div>
+        </div>
+    </header>
+
+<div class="pt-24 bg-[#0a0f1c] text-white text-center pb-12">
+    <h1 class="text-4xl md:text-5xl font-extrabold mt-12 mb-4">Our Solar Solutions</h1>
+    <p class="text-gray-400">Comprehensive renewable energy services tailored to your needs.</p>
+</div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 relative bg-[#f4f6f8] border-t border-gray-200/60">
+        <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+                <div>
+                    <div
+                        class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+                        <span class="text-brand-blue font-bold uppercase tracking-widest text-xs">Our Solutions</span>
+                    </div>
+                    <h3 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900">Services & <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-blue-500">Solutions</span>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1: Residential Solar -->
+                <div
+                    class="bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 group border border-gray-100 overflow-hidden relative transform hover:-translate-y-2">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-blue-50 to-transparent rounded-bl-full z-0 transition-all duration-500 group-hover:scale-150 group-hover:from-blue-100">
+                    </div>
+                    <div class="p-8 relative z-10">
+                        <div
+                            class="w-14 h-14 bg-white border border-gray-100 shadow-sm rounded-2xl flex items-center justify-center text-brand-blue mb-6 group-hover:bg-gradient-to-br group-hover:from-brand-blue group-hover:to-blue-600 group-hover:text-white transition duration-500 transform group-hover:rotate-12 group-hover:scale-110">
+                            <i class="fa-solid fa-house-chimney text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Residential Solar</h3>
+                        <p class="text-gray-500 leading-relaxed mb-6 text-sm">Custom setups designed specifically for
+                            homes to maximize savings and independence.</p>
+                        <a href="#"
+                            class="text-brand-blue font-bold flex items-center group-hover:text-brand-green transition-colors text-xs uppercase tracking-wider">Explore
+                            <i
+                                class="fa-solid fa-arrow-right-long ml-2 transform group-hover:translate-x-2 transition-transform"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Commercial & Industrial -->
+                <div
+                    class="bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 group border border-gray-100 overflow-hidden relative transform hover:-translate-y-2">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-green-50 to-transparent rounded-bl-full z-0 transition-all duration-500 group-hover:scale-150 group-hover:from-green-100">
+                    </div>
+                    <div class="p-8 relative z-10">
+                        <div
+                            class="w-14 h-14 bg-white border border-gray-100 shadow-sm rounded-2xl flex items-center justify-center text-brand-green mb-6 group-hover:bg-gradient-to-br group-hover:from-brand-green group-hover:to-green-600 group-hover:text-white transition duration-500 transform group-hover:-rotate-12 group-hover:scale-110">
+                            <i class="fa-solid fa-industry text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Commercial & Industrial</h3>
+                        <p class="text-gray-500 leading-relaxed mb-6 text-sm">Large-scale energy solutions to reduce
+                            overhead for factories and offices.</p>
+                        <a href="#"
+                            class="text-brand-green font-bold flex items-center group-hover:text-brand-blue transition-colors text-xs uppercase tracking-wider">Explore
+                            <i
+                                class="fa-solid fa-arrow-right-long ml-2 transform group-hover:translate-x-2 transition-transform"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Solar Maintenance -->
+                <div
+                    class="bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 group border border-gray-100 overflow-hidden relative transform hover:-translate-y-2">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-blue-50 to-transparent rounded-bl-full z-0 transition-all duration-500 group-hover:scale-150 group-hover:from-blue-100">
+                    </div>
+                    <div class="p-8 relative z-10">
+                        <div
+                            class="w-14 h-14 bg-white border border-gray-100 shadow-sm rounded-2xl flex items-center justify-center text-brand-blue mb-6 group-hover:bg-gradient-to-br group-hover:from-brand-blue group-hover:to-blue-600 group-hover:text-white transition duration-500 transform group-hover:rotate-12 group-hover:scale-110">
+                            <i class="fa-solid fa-tools text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Solar Maintenance</h3>
+                        <p class="text-gray-500 leading-relaxed mb-6 text-sm">Professional cleaning and repair services
+                            to keep existing panels at peak efficiency.</p>
+                        <a href="#"
+                            class="text-brand-blue font-bold flex items-center group-hover:text-brand-green transition-colors text-xs uppercase tracking-wider">Explore
+                            <i
+                                class="fa-solid fa-arrow-right-long ml-2 transform group-hover:translate-x-2 transition-transform"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Net Metering -->
+                <div
+                    class="bg-white rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 group border border-gray-100 overflow-hidden relative transform hover:-translate-y-2">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-green-50 to-transparent rounded-bl-full z-0 transition-all duration-500 group-hover:scale-150 group-hover:from-green-100">
+                    </div>
+                    <div class="p-8 relative z-10">
+                        <div
+                            class="w-14 h-14 bg-white border border-gray-100 shadow-sm rounded-2xl flex items-center justify-center text-brand-green mb-6 group-hover:bg-gradient-to-br group-hover:from-brand-green group-hover:to-green-600 group-hover:text-white transition duration-500 transform group-hover:-rotate-12 group-hover:scale-110">
+                            <i class="fa-solid fa-bolt text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Net Metering</h3>
+                        <p class="text-gray-500 leading-relaxed mb-6 text-sm">Systems and assistance allowing you to
+                            sell excess electricity back to the grid.</p>
+                        <a href="#"
+                            class="text-brand-green font-bold flex items-center group-hover:text-brand-blue transition-colors text-xs uppercase tracking-wider">Explore
+                            <i
+                                class="fa-solid fa-arrow-right-long ml-2 transform group-hover:translate-x-2 transition-transform"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-we-work" class="py-32 bg-[#f4f6f8] relative border-t border-gray-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <div
+                    class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+                    <span class="text-brand-blue font-bold uppercase tracking-widest text-xs">Our Process</span>
+                </div>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-gray-900">How It Works</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+                <!-- Connecting Line for Desktop -->
+                <div
+                    class="hidden md:block absolute top-[45px] left-[12.5%] right-[12.5%] h-1 bg-gradient-to-r from-gray-200 via-brand-blue/30 to-gray-200 z-0">
+                </div>
+
+                <!-- Step 1 -->
+                <div class="relative text-center group z-10">
+                    <div
+                        class="w-24 h-24 mx-auto bg-white border-4 border-gray-100 rounded-full flex items-center justify-center text-3xl text-gray-400 group-hover:border-brand-blue group-hover:text-brand-blue group-hover:scale-110 transition-all duration-300 shadow-sm mb-6">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">1. Consultation</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Free site survey and professional advice tailored
+                        to your energy needs.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative text-center group z-10">
+                    <div
+                        class="w-24 h-24 mx-auto bg-white border-4 border-gray-100 rounded-full flex items-center justify-center text-3xl text-gray-400 group-hover:border-brand-green group-hover:text-brand-green group-hover:scale-110 transition-all duration-300 shadow-sm mb-6">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">2. Design & Quote</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Custom system design and a transparent, competitive
+                        price quote.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative text-center group z-10">
+                    <div
+                        class="w-24 h-24 mx-auto bg-white border-4 border-gray-100 rounded-full flex items-center justify-center text-3xl text-gray-400 group-hover:border-brand-blue group-hover:text-brand-blue group-hover:scale-110 transition-all duration-300 shadow-sm mb-6">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">3. Installation</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Seamless setup and mounting performed by an expert
+                        technical team.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative text-center group z-10">
+                    <div
+                        class="w-24 h-24 mx-auto bg-white border-4 border-gray-100 rounded-full flex items-center justify-center text-3xl text-gray-400 group-hover:border-brand-green group-hover:text-brand-green group-hover:scale-110 transition-all duration-300 shadow-sm mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">4. Net Metering</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Full assistance with the approval and installation
+                        of the Green Meter.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="#contact"
+                    class="inline-flex items-center text-brand-blue font-bold hover:text-brand-green transition-colors text-lg group">
+                    Start Your Solar Journey <i
+                        class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                </a>
+
+                            </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0a0f1c] text-gray-400 pt-24 pb-12 border-t border-white/5 relative overflow-hidden">
+        <!-- Abstract glowing background elements -->
+        <div
+            class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-[150px] pointer-events-none translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-green/5 rounded-full blur-[150px] pointer-events-none -translate-x-1/2 translate-y-1/2">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-20">
+                <div class="lg:col-span-5 pr-0 lg:pr-12">
+                    <div class="flex items-center gap-3 mb-8">
+                        <img src="aalogo.png" alt="Reliance Energy Logo"
+                            class="h-10 w-auto brightness-0 invert opacity-100">
+                        <h2 class="text-2xl font-extrabold leading-none tracking-tight text-white">RELIANCE <br><span
+                                class="text-brand-blue text-lg">ENERGY</span></h2>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed text-sm max-w-sm">Reliance Energy (RE) brings over 15 years of experience to every project. We provide custom, cost-effective renewable energy solutions to help you cut utility bills, ensure uninterrupted power, and contribute to a sustainable future.</p>
+                    <div class="mb-6 space-y-3">
+                        <p class="text-sm text-gray-400 flex items-start"><i class="fa-solid fa-location-dot mt-1 mr-3 text-brand-green"></i> 21 A Ext, opposite McDonald's,<br>Block A Phase 1 Judicial Colony,<br>Lahore, 54000</p>
+                        <p class="text-sm text-gray-400 flex items-center"><i class="fa-solid fa-phone mr-3 text-brand-green"></i> 0311 1777861</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-brand-blue hover:text-white transition-all transform hover:-translate-y-1"><i
+                                class="fa-brands fa-facebook-f text-sm"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-[#1DA1F2] hover:text-white transition-all transform hover:-translate-y-1"><i
+                                class="fa-brands fa-twitter text-sm"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-[#E1306C] hover:text-white transition-all transform hover:-translate-y-1"><i
+                                class="fa-brands fa-instagram text-sm"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-[#0077B5] hover:text-white transition-all transform hover:-translate-y-1"><i
+                                class="fa-brands fa-linkedin-in text-sm"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Company</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="about.html"
+                                class="hover:text-brand-blue hover:translate-x-1 inline-block transition-transform duration-300">About
+                                Us</a></li>
+                        <li><a href="team.html"
+                                class="hover:text-brand-blue hover:translate-x-1 inline-block transition-transform duration-300">Leadership
+                                Team</a></li>
+                        <li><a href="#"
+                                class="hover:text-brand-blue hover:translate-x-1 inline-block transition-transform duration-300">Careers</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:text-brand-blue hover:translate-x-1 inline-block transition-transform duration-300">News
+                                & Press</a></li>
+                        <li><a href="#"
+                                class="hover:text-brand-blue hover:translate-x-1 inline-block transition-transform duration-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Services</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="services.html"
+                                class="hover:text-brand-green hover:translate-x-1 inline-block transition-transform duration-300">Solar
+                                PV Systems</a></li>
+                        <li><a href="services.html"
+                                class="hover:text-brand-green hover:translate-x-1 inline-block transition-transform duration-300">Wind
+                                Generators</a></li>
+                        <li><a href="services.html"
+                                class="hover:text-brand-green hover:translate-x-1 inline-block transition-transform duration-300">Solar
+                                Equipment</a></li>
+                        <li><a href="services.html"
+                                class="hover:text-brand-green hover:translate-x-1 inline-block transition-transform duration-300">Energy
+                                Manufacture</a></li>
+                        <li><a href="services.html"
+                                class="hover:text-brand-green hover:translate-x-1 inline-block transition-transform duration-300">Inspection</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3">
+                    <h3 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Stay Updated</h3>
+                    <p class="text-gray-500 mb-5 text-sm leading-relaxed">Subscribe to our newsletter for the latest
+                        green energy insights.</p>
+                    <form class="relative group">
+                        <input type="email" placeholder="Enter your email"
+                            class="bg-white/5 text-white pl-5 pr-14 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue border border-white/10 w-full text-sm transition-all group-hover:border-white/20">
+                        <button type="submit"
+                            class="absolute right-2 top-2 bottom-2 bg-brand-blue hover:bg-blue-600 text-white rounded-lg px-4 flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2026 Reliance Energy. All rights reserved.</p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    </div>
+</body>
+
+</html>
